@@ -1,0 +1,12 @@
+[31m[1mCMake Error[0m at /home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/CMakeLists.txt:140 (add_executable):
+  Cannot find source file:
+
+    src/my_realarm_test.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+CMake Error: CMake can not determine linker language for target: my_realarm_test
+CMake Error: Cannot determine link language for target "my_realarm_test".
+make: *** [cmake_check_build_system] Error 1

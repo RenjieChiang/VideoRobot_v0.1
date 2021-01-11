@@ -1,0 +1,8 @@
+prefix=/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api
+
+Name: xarm_api
+Description: Description of xarm_api
+Version: 0.0.0
+Cflags: -I/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/include
+Libs: -L${prefix}/lib -lxarm_api -lxarm_ros_client
+Requires: roscpp std_msgs

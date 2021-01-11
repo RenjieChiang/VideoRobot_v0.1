@@ -1,0 +1,1 @@
+/home/tianbot/chiang_xarm_ws/devel/.private/my_xarm6/share/my_xarm6/cmake/my_xarm6Config.cmake

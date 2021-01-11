@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+# generated from catkin/python/catkin/environment_cache.py
+
+# based on a snapshot of the environment before and after calling the setup script
+# it emulates the modifications of the setup script without recurring computations
+
+# new environment variables
+
+# modified environment variables
+export CMAKE_PREFIX_PATH="/home/tianbot/chiang_xarm_ws/devel/.private/catkin_tools_prebuild:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH='/home/tianbot/tianbot_mini_ws/devel/lib:/home/tianbot/manipulation_ws/devel/lib:/home/tianbot/turtlebot_ws/devel/lib:/home/tianbot/study_ws/devel/lib:/home/tianbot/tianbot_ws/devel/lib:/opt/ros/melodic/lib:/opt/ros/melodic/lib/x86_64-linux-gnu:/home/tianbot/catkin_ws/devel/lib'
+export PKG_CONFIG_PATH='/home/tianbot/tianbot_mini_ws/devel/lib/pkgconfig:/home/tianbot/manipulation_ws/devel/lib/pkgconfig:/home/tianbot/turtlebot_ws/devel/lib/pkgconfig:/home/tianbot/study_ws/devel/lib/pkgconfig:/home/tianbot/tianbot_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig:/home/tianbot/catkin_ws/devel/lib/pkgconfig'
+export PWD='/home/tianbot/chiang_xarm_ws/build/catkin_tools_prebuild'
+export PYTHONPATH='/home/tianbot/tianbot_mini_ws/devel/lib/python2.7/dist-packages:/home/tianbot/manipulation_ws/devel/lib/python2.7/dist-packages:/home/tianbot/turtlebot_ws/devel/lib/python2.7/dist-packages:/home/tianbot/study_ws/devel/lib/python2.7/dist-packages:/home/tianbot/tianbot_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/tianbot/chiang_xarm_ws/devel/.private/catkin_tools_prebuild/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH='/home/tianbot/chiang_xarm_ws/build/catkin_tools_prebuild:/home/tianbot/chiang_xarm_ws/src/xarm_ros/examples/multi_xarm5:/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_xarm6:/home/tianbot/chiang_xarm_ws/src/xarm_ros/examples/xarm7_redundancy_res:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_bringup:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_description:/home/tianbot/chiang_xarm_ws/src/xarm_ros/dual_xarm6_moveit_config:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm5_gripper_moveit_config:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm5_moveit_config:/home/tianbot/chiang_xarm_ws/src/xarm_ros/examples/xarm5_vacuum_gripper_moveit_config:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm6_gripper_moveit_config:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm6_moveit_config:/home/tianbot/chiang_xarm_ws/src/xarm_ros/examples/xarm6_vacuum_gripper_moveit_config:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm7_gripper_moveit_config:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm7_moveit_config:/home/tianbot/chiang_xarm_ws/src/xarm_ros/examples/xarm7_vacuum_gripper_moveit_config:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_device:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_gazebo:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_msgs:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_controller:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_gripper:/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_planner:/home/tianbot/tianbot_mini_ws/src:/home/tianbot/manipulation_ws/src:/home/tianbot/turtlebot_ws/src:/home/tianbot/study_ws/src:/home/tianbot/tianbot_ws/src:/opt/ros/melodic/share:/home/tianbot/catkin_ws/src:/opt/ros/melodic/share'

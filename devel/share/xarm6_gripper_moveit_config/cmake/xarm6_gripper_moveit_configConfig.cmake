@@ -1,0 +1,1 @@
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm6_gripper_moveit_config/share/xarm6_gripper_moveit_config/cmake/xarm6_gripper_moveit_configConfig.cmake

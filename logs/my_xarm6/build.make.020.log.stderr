@@ -1,0 +1,7 @@
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_xarm6/src/movegroup_test.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_xarm6/src/movegroup_test.cpp:31:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass moveit::planning_interface::MoveGroupInterface[m[K’ has no member named ‘[01m[Kset[m[K’
+ move_group.[01;31m[Kset[m[K
+            [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/movegroup_test.dir/src/movegroup_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/movegroup_test.dir/all] Error 2
+make: *** [all] Error 2

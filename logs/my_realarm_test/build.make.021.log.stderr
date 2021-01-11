@@ -1,0 +1,214 @@
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+ int readcameradata(std::vector<[01;31m[Kvector[m[K<double> >& posedata)
+                                [01;31m[K^~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:32:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/7/vector:64:0[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_vector.h:216:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+           [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/boost/mpl/aux_/include_preprocessed.hpp:37:0[m[K,
+                 from [01m[K/usr/include/boost/mpl/vector.hpp:46[m[K,
+                 from [01m[K/usr/include/boost/math/policies/policy.hpp:14[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:22:8:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::mpl::vector[m[K’
+ struct [01;36m[Kvector[m[K;
+        [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:52:0[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast.hpp:32[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/transport_hints.h:34[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/subscribe_options.h:33[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/node_handle.h:42[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/boost/container/container_fwd.hpp:108:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::container::vector[m[K’
+ class [01;36m[Kvector[m[K;
+       [01;36m[K^~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ int readcameradata(std::vector<vector<double[01;31m[K>[m[K >& posedata)
+                                             [01;31m[K^[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+ int readcameradata(std::vector<[01;31m[Kvector[m[K<double> >& posedata)
+                                [01;31m[K^~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:32:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/7/vector:64:0[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_vector.h:216:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+           [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/boost/mpl/aux_/include_preprocessed.hpp:37:0[m[K,
+                 from [01m[K/usr/include/boost/mpl/vector.hpp:46[m[K,
+                 from [01m[K/usr/include/boost/math/policies/policy.hpp:14[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:22:8:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::mpl::vector[m[K’
+ struct [01;36m[Kvector[m[K;
+        [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:52:0[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast.hpp:32[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/transport_hints.h:34[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/subscribe_options.h:33[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/node_handle.h:42[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/boost/container/container_fwd.hpp:108:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::container::vector[m[K’
+ class [01;36m[Kvector[m[K;
+       [01;36m[K^~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ int readcameradata(std::vector<vector<double[01;31m[K>[m[K >& posedata)
+                                             [01;31m[K^[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+ int readcameradata(std::vector<[01;31m[Kvector[m[K<double> >& posedata)
+                                [01;31m[K^~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:32:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/7/vector:64:0[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_vector.h:216:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+           [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/boost/mpl/aux_/include_preprocessed.hpp:37:0[m[K,
+                 from [01m[K/usr/include/boost/mpl/vector.hpp:46[m[K,
+                 from [01m[K/usr/include/boost/math/policies/policy.hpp:14[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:22:8:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::mpl::vector[m[K’
+ struct [01;36m[Kvector[m[K;
+        [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:52:0[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast.hpp:32[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/transport_hints.h:34[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/subscribe_options.h:33[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/node_handle.h:42[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/boost/container/container_fwd.hpp:108:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::container::vector[m[K’
+ class [01;36m[Kvector[m[K;
+       [01;36m[K^~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ int readcameradata(std::vector<vector<double[01;31m[K>[m[K >& posedata)
+                                             [01;31m[K^[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+ int readcameradata(std::vector<[01;31m[Kvector[m[K<double> >& posedata)
+                                [01;31m[K^~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:32:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/7/vector:64:0[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_vector.h:216:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+           [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/boost/mpl/aux_/include_preprocessed.hpp:37:0[m[K,
+                 from [01m[K/usr/include/boost/mpl/vector.hpp:46[m[K,
+                 from [01m[K/usr/include/boost/math/policies/policy.hpp:14[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:22:8:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::mpl::vector[m[K’
+ struct [01;36m[Kvector[m[K;
+        [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:52:0[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast.hpp:32[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/transport_hints.h:34[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/subscribe_options.h:33[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/node_handle.h:42[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/boost/container/container_fwd.hpp:108:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::container::vector[m[K’
+ class [01;36m[Kvector[m[K;
+       [01;36m[K^~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ int readcameradata(std::vector<vector<double[01;31m[K>[m[K >& posedata)
+                                             [01;31m[K^[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:26:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kposedata[m[K’ was not declared in this scope
+ int readcameradata(std::vector<vector<double> >& [01;31m[Kposedata[m[K)
+                                                  [01;31m[K^~~~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:[m[K In function ‘[01m[Kint move_lineb_test(xarm_msgs::Move, ros::ServiceClient)[m[K’:
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:83:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+     std::vector<[01;31m[Kvector[m[K<double> >posedata;
+                 [01;31m[K^~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:83:17:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/7/vector:64:0[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_vector.h:216:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+           [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/boost/mpl/aux_/include_preprocessed.hpp:37:0[m[K,
+                 from [01m[K/usr/include/boost/mpl/vector.hpp:46[m[K,
+                 from [01m[K/usr/include/boost/math/policies/policy.hpp:14[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:22:8:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::mpl::vector[m[K’
+ struct [01;36m[Kvector[m[K;
+        [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:52:0[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast/try_lexical_convert.hpp:42[m[K,
+                 from [01m[K/usr/include/boost/lexical_cast.hpp:32[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/transport_hints.h:34[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/subscribe_options.h:33[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/node_handle.h:42[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:1[m[K:
+[01m[K/usr/include/boost/container/container_fwd.hpp:108:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::container::vector[m[K’
+ class [01;36m[Kvector[m[K;
+       [01;36m[K^~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:83:30:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+     std::vector<vector<double[01;31m[K>[m[K >posedata;
+                              [01;31m[K^[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:83:30:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:83:32:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+     std::vector<vector<double> [01;31m[K>[m[Kposedata;
+                                [01;31m[K^[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:85:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kposedata[m[K’ was not declared in this scope
+     if(readcameradata([01;31m[Kposedata[m[K)==1)
+                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:85:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kreadcameradata[m[K’ cannot be used as a function
+     if(readcameradata(posedata[01;31m[K)[m[K==1)
+                               [01;31m[K^[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:95:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kposedata[m[K’ was not declared in this scope
+     for ( i = 0; i < [01;31m[Kposedata[m[K.size(); i++)
+                      [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/realarm_test.dir/src/realarm_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/realarm_test.dir/all] Error 2
+make: *** [all] Error 2

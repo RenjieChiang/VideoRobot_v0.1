@@ -1,0 +1,8 @@
+prefix=/home/tianbot/chiang_xarm_ws/devel/.private/my_realarm_test
+
+Name: my_realarm_test
+Description: Description of my_realarm_test
+Version: 0.0.0
+Cflags: -I/usr/include/eigen3
+Libs: -L${prefix}/lib 
+Requires: 

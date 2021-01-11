@@ -1,0 +1,1 @@
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_gripper/share/roseus/ros/xarm_gripper/msg/MoveFeedback.l

@@ -1,0 +1,12 @@
+xarm_ros/xarm_api
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api/cmake.lock /home/tianbot/chiang_xarm_ws/devel/./cmake.lock
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api/lib/libxarm_api.so /home/tianbot/chiang_xarm_ws/devel/lib/libxarm_api.so
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api/lib/libxarm_ros_client.so /home/tianbot/chiang_xarm_ws/devel/lib/libxarm_ros_client.so
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api/lib/pkgconfig/xarm_api.pc /home/tianbot/chiang_xarm_ws/devel/lib/pkgconfig/xarm_api.pc
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api/lib/xarm_api/example1_report_norm_node /home/tianbot/chiang_xarm_ws/devel/lib/xarm_api/example1_report_norm_node
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api/lib/xarm_api/servo_cart_test /home/tianbot/chiang_xarm_ws/devel/lib/xarm_api/servo_cart_test
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api/lib/xarm_api/test_tool_modbus /home/tianbot/chiang_xarm_ws/devel/lib/xarm_api/test_tool_modbus
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api/lib/xarm_api/xarm_driver_node /home/tianbot/chiang_xarm_ws/devel/lib/xarm_api/xarm_driver_node
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api/lib/xarm_api/move_test /home/tianbot/chiang_xarm_ws/devel/lib/xarm_api/move_test
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api/share/xarm_api/cmake/xarm_apiConfig.cmake /home/tianbot/chiang_xarm_ws/devel/share/xarm_api/cmake/xarm_apiConfig.cmake
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_api/share/xarm_api/cmake/xarm_apiConfig-version.cmake /home/tianbot/chiang_xarm_ws/devel/share/xarm_api/cmake/xarm_apiConfig-version.cmake

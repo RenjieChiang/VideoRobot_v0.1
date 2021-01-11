@@ -1,0 +1,40 @@
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:[m[K In function ‘[01m[Kint move_lineb_test(xarm_msgs::Move, ros::ServiceClient)[m[K’:
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:60:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[K{[m[K’ token
+                                     [01;31m[K{[m[K300,0,300,-3.14,-3.14/5,0}};
+                                     [01;31m[K^[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:60:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:[m[K At global scope:
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrv[m[K’ does not name a type; did you mean ‘[01m[Ksbrk[m[K’?
+     [01;31m[Ksrv[m[K.request.mvvelo = 100;
+     [01;31m[K^~~[m[K
+     [32m[Ksbrk[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:62:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrv[m[K’ does not name a type; did you mean ‘[01m[Ksbrk[m[K’?
+     [01;31m[Ksrv[m[K.request.mvacc = 1000;
+     [01;31m[K^~~[m[K
+     [32m[Ksbrk[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:63:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrv[m[K’ does not name a type; did you mean ‘[01m[Ksbrk[m[K’?
+     [01;31m[Ksrv[m[K.request.mvtime = 0;
+     [01;31m[K^~~[m[K
+     [32m[Ksbrk[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrv[m[K’ does not name a type; did you mean ‘[01m[Ksbrk[m[K’?
+     [01;31m[Ksrv[m[K.request.mvradii = 20;
+     [01;31m[K^~~[m[K
+     [32m[Ksbrk[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:65:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfor[m[K’
+     [01;31m[Kfor[m[K(int k=0; k<1; k++)
+     [01;31m[K^~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:65:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kk[m[K’ does not name a type
+     for(int k=0; [01;31m[Kk[m[K<1; k++)
+                  [01;31m[K^[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:65:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kk[m[K’ does not name a type
+     for(int k=0; k<1; [01;31m[Kk[m[K++)
+                       [01;31m[K^[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:81:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+     [01;31m[Kreturn[m[K 0;
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/xarm_api/test/move_test.cpp:82:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/move_test.dir/test/move_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/move_test.dir/all] Error 2
+make: *** [all] Error 2

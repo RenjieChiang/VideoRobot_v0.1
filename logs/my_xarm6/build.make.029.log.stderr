@@ -1,0 +1,25 @@
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/urdf/model.h:50[m[K,
+                 from [01m[K/opt/ros/melodic/include/moveit/robot_model/robot_model.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/moveit/robot_state/robot_state.h:41[m[K,
+                 from [01m[K/opt/ros/melodic/include/moveit/move_group_interface/move_group_interface.h:42[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_xarm6/src/movegroup_test.cpp:1[m[K:
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_xarm6/src/movegroup_test.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/opt/ros/melodic/include/ros/console.h:348:176:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 8 has type ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >::_x_type {aka double}[m[K’ [[01;35m[K-Wformat=[m[K]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:351:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:112:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO_NAMED(name, ...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~[m[K
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_xarm6/src/movegroup_test.cpp:77:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO_NAMED[m[K’
+ [01;36m[KR[m[KOS_INFO_NAMED("TEST","TARGETpose%s",move_group.getPoseTarget().pose.position.x);
+ [01;36m[K^[m[K

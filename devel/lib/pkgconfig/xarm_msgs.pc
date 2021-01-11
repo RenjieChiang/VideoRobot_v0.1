@@ -1,0 +1,1 @@
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_msgs/lib/pkgconfig/xarm_msgs.pc

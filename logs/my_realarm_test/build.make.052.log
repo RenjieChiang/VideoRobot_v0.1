@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target realarm_servo_cart[0m
+[35m[1mScanning dependencies of target realarm_test[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/realarm_servo_cart.dir/src/realarm_servo_cart.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/realarm_test.dir/src/realarm_test.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable /home/tianbot/chiang_xarm_ws/devel/.private/my_realarm_test/lib/my_realarm_test/realarm_servo_cart[0m
+[100%] [32m[1mLinking CXX executable /home/tianbot/chiang_xarm_ws/devel/.private/my_realarm_test/lib/my_realarm_test/realarm_test[0m
+[100%] Built target realarm_servo_cart
+[100%] Built target realarm_test

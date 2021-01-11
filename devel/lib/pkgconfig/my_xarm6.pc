@@ -1,0 +1,1 @@
+/home/tianbot/chiang_xarm_ws/devel/.private/my_xarm6/lib/pkgconfig/my_xarm6.pc

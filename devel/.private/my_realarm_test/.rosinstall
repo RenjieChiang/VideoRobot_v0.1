@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/tianbot/chiang_xarm_ws/devel/.private/my_realarm_test/setup.sh

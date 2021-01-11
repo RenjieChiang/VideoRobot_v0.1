@@ -1,0 +1,8 @@
+prefix=/home/tianbot/chiang_xarm_ws/devel/.private/xarm_device
+
+Name: xarm_device
+Description: Description of xarm_device
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

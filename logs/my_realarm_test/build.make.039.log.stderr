@@ -1,0 +1,6 @@
+CMakeFiles/realarm_servo_cart.dir/src/realarm_servo_cart.cpp.o：在函数‘servo_cart_test(xarm_msgs::Move&, ros::ServiceClient&)’中：
+realarm_servo_cart.cpp:(.text+0x35d)：对‘readcameradata(std::vector<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > >)’未定义的引用
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/tianbot/chiang_xarm_ws/devel/.private/my_realarm_test/lib/my_realarm_test/realarm_servo_cart] Error 1
+make[1]: *** [CMakeFiles/realarm_servo_cart.dir/all] Error 2
+make: *** [all] Error 2

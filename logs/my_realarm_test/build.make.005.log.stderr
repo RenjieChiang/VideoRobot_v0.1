@@ -1,0 +1,7 @@
+[01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_test.cpp:6:9:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs: 没有那个文件或目录
+ #include[01;31m[K<geometry_msgs>[m[K
+         [01;31m[K^~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/realarm_test.dir/src/realarm_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/realarm_test.dir/all] Error 2
+make: *** [all] Error 2

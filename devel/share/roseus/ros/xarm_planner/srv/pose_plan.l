@@ -1,0 +1,1 @@
+/home/tianbot/chiang_xarm_ws/devel/.private/xarm_planner/share/roseus/ros/xarm_planner/srv/pose_plan.l
