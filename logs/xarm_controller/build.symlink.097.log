@@ -1,8 +1,0 @@
-Linked: (/home/tianbot/chiang_xarm_ws/devel/.private/xarm_controller/lib/libxarm_hw.so, /home/tianbot/chiang_xarm_ws/devel/lib/libxarm_hw.so)
-Linked: (/home/tianbot/chiang_xarm_ws/devel/.private/xarm_controller/lib/libxarm_combined_hw.so, /home/tianbot/chiang_xarm_ws/devel/lib/libxarm_combined_hw.so)
-Linked: (/home/tianbot/chiang_xarm_ws/devel/.private/xarm_controller/lib/pkgconfig/xarm_controller.pc, /home/tianbot/chiang_xarm_ws/devel/lib/pkgconfig/xarm_controller.pc)
-Linked: (/home/tianbot/chiang_xarm_ws/devel/.private/xarm_controller/lib/xarm_controller/sample_motion, /home/tianbot/chiang_xarm_ws/devel/lib/xarm_controller/sample_motion)
-Linked: (/home/tianbot/chiang_xarm_ws/devel/.private/xarm_controller/lib/xarm_controller/xarm_traj_controller, /home/tianbot/chiang_xarm_ws/devel/lib/xarm_controller/xarm_traj_controller)
-Linked: (/home/tianbot/chiang_xarm_ws/devel/.private/xarm_controller/lib/xarm_controller/xarm_combined_traj_controller, /home/tianbot/chiang_xarm_ws/devel/lib/xarm_controller/xarm_combined_traj_controller)
-Linked: (/home/tianbot/chiang_xarm_ws/devel/.private/xarm_controller/share/xarm_controller/cmake/xarm_controllerConfig.cmake, /home/tianbot/chiang_xarm_ws/devel/share/xarm_controller/cmake/xarm_controllerConfig.cmake)
-Linked: (/home/tianbot/chiang_xarm_ws/devel/.private/xarm_controller/share/xarm_controller/cmake/xarm_controllerConfig-version.cmake, /home/tianbot/chiang_xarm_ws/devel/share/xarm_controller/cmake/xarm_controllerConfig-version.cmake)

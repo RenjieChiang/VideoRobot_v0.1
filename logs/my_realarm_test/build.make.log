@@ -1,5 +1,19 @@
 [35m[1mScanning dependencies of target realarm_servo_cart[0m
 [ 25%] [32mBuilding CXX object CMakeFiles/realarm_servo_cart.dir/src/realarm_servo_cart.cpp.o[0m
-[ 75%] Built target realarm_test
-[100%] [32m[1mLinking CXX executable /home/tianbot/chiang_xarm_ws/devel/.private/my_realarm_test/lib/my_realarm_test/realarm_servo_cart[0m
-[100%] Built target realarm_servo_cart
+In file included from [01m[K/usr/include/c++/7/ext/string_conversions.h:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/bits/basic_string.h:6361[m[K,
+                 from [01m[K/usr/include/c++/7/string:52[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/tianbot/chiang_xarm_ws/src/xarm_ros/my_realarm_test/src/realarm_servo_cart.cpp:1[m[K:
+[01m[K/usr/include/c++/7/cstdlib:75:15:[m[K [01;31m[Kfatal error: [m[Kstdlib.h: 没有那个文件或目录
+ #include_next [01;31m[K<stdlib.h>[m[K
+               [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+CMakeFiles/realarm_servo_cart.dir/build.make:62: recipe for target 'CMakeFiles/realarm_servo_cart.dir/src/realarm_servo_cart.cpp.o' failed
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/realarm_servo_cart.dir/all' failed
+make[2]: *** [CMakeFiles/realarm_servo_cart.dir/src/realarm_servo_cart.cpp.o] Error 1
+make[1]: *** [CMakeFiles/realarm_servo_cart.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

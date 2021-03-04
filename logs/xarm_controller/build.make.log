@@ -1,5 +1,5 @@
+[  0%] Built target std_msgs_generate_messages_eus
 [ 20%] Built target sample_motion
-[ 20%] Built target std_msgs_generate_messages_eus
 [ 20%] Built target control_msgs_generate_messages_cpp
 [ 20%] Built target geometry_msgs_generate_messages_lisp
 [ 20%] Built target geometry_msgs_generate_messages_cpp
@@ -10,8 +10,8 @@
 [ 20%] Built target controller_manager_msgs_generate_messages_cpp
 [ 20%] Built target geometry_msgs_generate_messages_py
 [ 20%] Built target std_msgs_generate_messages_nodejs
-[ 20%] Built target sensor_msgs_generate_messages_eus
 [ 20%] Built target sensor_msgs_generate_messages_cpp
+[ 20%] Built target sensor_msgs_generate_messages_eus
 [ 20%] Built target sensor_msgs_generate_messages_py
 [ 20%] Built target geometry_msgs_generate_messages_nodejs
 [ 20%] Built target std_msgs_generate_messages_cpp
@@ -19,8 +19,8 @@
 [ 20%] Built target controller_manager_msgs_generate_messages_py
 [ 20%] Built target roscpp_generate_messages_lisp
 [ 20%] Built target std_msgs_generate_messages_lisp
-[ 20%] Built target roscpp_generate_messages_nodejs
 [ 20%] Built target geometry_msgs_generate_messages_eus
+[ 20%] Built target roscpp_generate_messages_nodejs
 [ 20%] Built target roscpp_generate_messages_py
 [ 20%] Built target controller_manager_msgs_generate_messages_eus
 [ 20%] Built target trajectory_msgs_generate_messages_eus
@@ -29,8 +29,8 @@
 [ 20%] Built target xarm_msgs_generate_messages_py
 [ 20%] Built target rosgraph_msgs_generate_messages_cpp
 [ 20%] Built target control_toolbox_generate_messages_nodejs
-[ 20%] Built target dynamic_reconfigure_generate_messages_cpp
 [ 20%] Built target rosgraph_msgs_generate_messages_eus
+[ 20%] Built target dynamic_reconfigure_generate_messages_cpp
 [ 20%] Built target rosgraph_msgs_generate_messages_lisp
 [ 20%] Built target trajectory_msgs_generate_messages_py
 [ 20%] Built target control_msgs_generate_messages_py
@@ -39,17 +39,17 @@
 [ 20%] Built target control_toolbox_gencfg
 [ 20%] Built target control_msgs_generate_messages_eus
 [ 20%] Built target control_msgs_generate_messages_lisp
-[ 20%] Built target dynamic_reconfigure_gencfg
 [ 20%] Built target roscpp_generate_messages_cpp
+[ 20%] Built target dynamic_reconfigure_gencfg
 [ 20%] Built target control_msgs_generate_messages_nodejs
 [ 20%] Built target actionlib_msgs_generate_messages_cpp
 [ 20%] Built target roscpp_generate_messages_eus
 [ 20%] Built target rosgraph_msgs_generate_messages_py
-[ 20%] Built target actionlib_msgs_generate_messages_eus
 [ 20%] Built target actionlib_msgs_generate_messages_lisp
+[ 20%] Built target actionlib_msgs_generate_messages_eus
 [ 20%] Built target trajectory_msgs_generate_messages_cpp
-[ 20%] Built target trajectory_msgs_generate_messages_lisp
 [ 20%] Built target trajectory_msgs_generate_messages_nodejs
+[ 20%] Built target trajectory_msgs_generate_messages_lisp
 [ 20%] Built target control_toolbox_generate_messages_cpp
 [ 20%] Built target control_toolbox_generate_messages_eus
 [ 20%] Built target control_toolbox_generate_messages_py
@@ -63,5 +63,5 @@
 [ 20%] Built target xarm_msgs_generate_messages_nodejs
 [ 40%] Built target xarm_hw
 [ 60%] Built target xarm_combined_hw
-[ 80%] Built target xarm_traj_controller
-[100%] Built target xarm_combined_traj_controller
+[ 80%] Built target xarm_combined_traj_controller
+[100%] Built target xarm_traj_controller
