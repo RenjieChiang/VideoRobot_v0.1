@@ -139,8 +139,9 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(realarm_test src/realarm_test.cpp MyRobot.cpp MyRobot.h)
+add_executable(realarm_test src/realarm_test.cpp)
 add_executable(realarm_servo_cart src/realarm_servo_cart.cpp)
+add_executable(my_robot src/MyRobot.cpp src/MyRobot.h src/MyRobotTest.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
