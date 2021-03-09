@@ -87,9 +87,16 @@ void MyRobot::setStartpose(const float *startpose_)
         start_pose[i] = startpose_[i];
     }
 }
-
+//exception: fail call service
 void MyRobot::motionEnable()
 {
+    try {
+        setState(0);
+        setMode(0);
+    }
+    catch (std::exception & e) {
+        std::cout << e.what() << std::endl;
+    }
     set_axis_srv_.request.id = 8;
     set_axis_srv_.request.data = 1;
     if(motion_ctrl_client_.call(set_axis_srv_))
@@ -100,6 +107,13 @@ void MyRobot::motionEnable()
 //异常：运动服务call失败
 void MyRobot::moveLinebTest() //未使用pose目前为测试
 {
+    try {
+        setState(0);
+        setMode(0);
+    }
+    catch (std::exception & e) {
+        std::cout << e.what() << std::endl;
+    }
     move_srv_ .request.mvvelo = 20.0 / 57.0;
     move_srv_ .request.mvacc = 1000;
     move_srv_ .request.mvtime = 0;
@@ -112,6 +126,13 @@ void MyRobot::moveLinebTest() //未使用pose目前为测试
 }
 void MyRobot::moveLineb(const std::vector<float> & pose_)
 {
+    try {
+        setState(0);
+        setMode(0);
+    }
+    catch (std::exception & e) {
+        std::cout << e.what() << std::endl;
+    }
     move_srv_.request.pose = pose_;
     move_srv_ .request.mvvelo = 20.0 / 57.0;
     move_srv_ .request.mvacc = 1000;
@@ -195,6 +216,13 @@ void MyRobot::goMyHome()
 //异常：servo运动失败
 void MyRobot::moveServoCart(const std::vector<std::vector<float>> & servo_pose)
 {
+    try {
+        setState(0);
+        setMode(1);
+    }
+    catch (std::exception & e) {
+        std::cout << e.what() << std::endl;
+    }
     move_srv_.request.mvvelo = 0;
     move_srv_.request.mvacc = 0;
     move_srv_.request.mvtime = 0;//0为普通模式，1为步进模式（坐标为相对值）
@@ -221,3 +249,40 @@ void MyRobot::goVideo()
     }
 }
 
+double MyRobot::GeneralModelSin8(const double **p_, double x)
+{
+    double result;
+    result =   p_[0][0] * sin(p_[0][1] * x + p_[0][2]) + p_[1][0] * sin(p_[1][1] * x + p_[1][2])
+            +  p_[2][0] * sin(p_[2][1] * x + p_[2][2]) + p_[3][0] * sin(p_[3][1] * x + p_[3][2])
+            +  p_[4][0] * sin(p_[4][1] * x + p_[4][2]) + p_[5][0] * sin(p_[5][1] * x + p_[5][2])
+            +  p_[6][0] * sin(p_[6][1] * x + p_[6][2]) + p_[7][0] * sin(p_[7][1] * x + p_[7][2]);
+    return result;
+}
+
+double MyRobot::LinearModelPoly9(const double *p_, const double x)
+{
+    double result;
+    result = p_[0] * pow(x,9) + p_[1] * pow(x,8) + p_[2] * pow(x,7)
+            + p_[3] * pow(x,6) + p_[4] * pow(x,5) + p_[5] * pow(x,4)
+            + p_[6] * pow(x,3) + p_[7] * pow(x,2) + p_[8] * x + p_[9];
+    return result;
+}
+
+//计算拟合与插值后的数据
+void MyRobot::calculate()
+{
+    double x_poly9_p[10] = {0.448, -0.02, -2.973, 0.3236, 7.289, -2.869, 12.68, 13.13, -69.59, -46.1};
+    double y_sin8_p[8][3] = {
+                            {4.103, 0.01957, -0.7143}, {4.271, 0.1045, 4.75}, {3, 0.03997, -0.2004},
+                            {2.26, 0.0601, 0.7872}, {6.961, 0.09453, 2.871}, {3.335, 0.07773, 1.978},
+                            {4.255, 0.1341, 0.5672}, {-0.2799, 0.1816, -3.19}
+                             };
+
+    double z_sin8_p[8][3] = {
+                            {239, 0.5935, 0.632}, {231.7, 0.6488, -2.602}, {0.2925, 5.336, -1.145},
+                            {0.8814, 6.169, -2.172}, {0.8623, 8.27, 2.18}, {0.7668, 23.29, 0.675},
+                            {0.6744, 9.041, -2.026}, {0.546, 19.68, -2.821} };
+
+
+
+}
