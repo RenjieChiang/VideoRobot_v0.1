@@ -12,7 +12,7 @@
 #include "xarm_driver.h"
 #include "ros/ros.h"
 
-#define DefualtFileName "/home/tianbot/testcppcode/transdataTRUE"//默认文件存储位置
+#define DefualtFileName "/home/tianbot/cam_Data_20210310"//默认文件存储位置
 
 typedef struct position3D
 {
