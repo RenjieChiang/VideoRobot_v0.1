@@ -3,7 +3,10 @@
 //
 
 #include "MyRobot.h"
-int main()
+int main(int argc, char **argv)
 {
+    ros::init(argc, argv, "my_robot_test");
+    ros::NodeHandle nh;
+
     return 0;
 }

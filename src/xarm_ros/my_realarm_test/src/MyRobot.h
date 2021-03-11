@@ -71,8 +71,9 @@ private:
     std::vector<std::vector<float>> cam_pose;//读取文件得到的数据
     std::vector<std::vector<float>> rob_pose;//插值后数据
     float start_pose[6];//起始位置，所以rob_pose会附加上这个值
-    static double LinearModelPoly9(const double *p_, double x);
-    static double GeneralModelSin8(const double ** p_, double x);
+    static double linearModelPoly9(const double *p_, double x);
+    static double generalModelSin8(const double p_[][3], double x);
+    static double linearModelPoly4(const double *p_,  double x);
 
 public:
 //    MyRobot();

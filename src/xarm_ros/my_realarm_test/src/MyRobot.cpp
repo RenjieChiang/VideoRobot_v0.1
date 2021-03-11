@@ -104,16 +104,23 @@ void MyRobot::motionEnable()
         ROS_INFO("%s\n", set_axis_srv_.response.message.c_str());
     } else throw std::runtime_error("Failed to call service motion_ctrl");
 }
+
 //异常：运动服务call失败
 void MyRobot::moveLinebTest() //未使用pose目前为测试
 {
+    // MOVE_LINEB need some additional configurations: wait=False, sleep before sending commands
     try {
         setState(0);
         setMode(0);
+        nh_.setParam("/xarm/wait_for_finish", false);
     }
     catch (std::exception & e) {
         std::cout << e.what() << std::endl;
     }
+
+    sleep_msg.data = 1.0;
+    sleep_pub_.publish(sleep_msg);
+
     move_srv_ .request.mvvelo = 20.0 / 57.0;
     move_srv_ .request.mvacc = 1000;
     move_srv_ .request.mvtime = 0;
@@ -123,16 +130,23 @@ void MyRobot::moveLinebTest() //未使用pose目前为测试
         ROS_INFO("%s\n", move_srv_.response.message.c_str());
     }
     else throw std::runtime_error("Failed to call service move_lineb");
+    nh_.setParam("/xarm/wait_for_finish", true);
 }
+
 void MyRobot::moveLineb(const std::vector<float> & pose_)
 {
     try {
         setState(0);
         setMode(0);
+        nh_.setParam("/xarm/wait_for_finish", false);
     }
     catch (std::exception & e) {
         std::cout << e.what() << std::endl;
     }
+
+    sleep_msg.data = 1.0;
+    sleep_pub_.publish(sleep_msg);
+
     move_srv_.request.pose = pose_;
     move_srv_ .request.mvvelo = 20.0 / 57.0;
     move_srv_ .request.mvacc = 1000;
@@ -142,6 +156,7 @@ void MyRobot::moveLineb(const std::vector<float> & pose_)
         ROS_INFO("%s\n", move_srv_.response.message.c_str());
     }
     else throw std::runtime_error("Failed to call service move_lineb");
+    nh_.setParam("/xarm/wait_for_finish", true);
 }
 
 //异常： 文件打开失败
@@ -174,12 +189,18 @@ void MyRobot::readCameraData(const std::string & filename)
         {
             myfile>>j;
         }
-        single_pose.push_back(10*num[0]+350);
+//        single_pose.push_back(10*num[0]+350);
+//        single_pose.push_back(10*num[1]);
+//        single_pose.push_back(10*num[2]+250);
+//        single_pose.push_back(-3.14);
+//        single_pose.push_back(0);
+//        single_pose.push_back(num[5]/180*3.14-3.14/2);
+        single_pose.push_back(10*num[0]);//转变源数据cm单位为mm单位
         single_pose.push_back(10*num[1]);
-        single_pose.push_back(10*num[2]+250);
-        single_pose.push_back(-3.14);
-        single_pose.push_back(0);
-        single_pose.push_back(num[5]/180*3.14-3.14/2);
+        single_pose.push_back(10*num[2]);
+        single_pose.push_back(num[3]);
+        single_pose.push_back(num[4]);
+        single_pose.push_back(num[5]);
         //数据顺序为
         // 0 1 2  3   4   5
         // x y z r_r r_p r_y
@@ -216,13 +237,9 @@ void MyRobot::goMyHome()
 //异常：servo运动失败
 void MyRobot::moveServoCart(const std::vector<std::vector<float>> & servo_pose)
 {
-    try {
-        setState(0);
-        setMode(1);
-    }
-    catch (std::exception & e) {
-        std::cout << e.what() << std::endl;
-    }
+    setState(0);
+    setMode(1);
+
     move_srv_.request.mvvelo = 0;
     move_srv_.request.mvacc = 0;
     move_srv_.request.mvtime = 0;//0为普通模式，1为步进模式（坐标为相对值）
@@ -235,6 +252,7 @@ void MyRobot::moveServoCart(const std::vector<std::vector<float>> & servo_pose)
         } else throw std::runtime_error("servo move fail!!!!");
         usleep(41666/2); //48HZ
     }
+    setMode(0);
 }
 
 void MyRobot::goVideo()
@@ -249,7 +267,7 @@ void MyRobot::goVideo()
     }
 }
 
-double MyRobot::GeneralModelSin8(const double **p_, double x)
+double MyRobot::generalModelSin8(const double p_[][3], double x)
 {
     double result;
     result =   p_[0][0] * sin(p_[0][1] * x + p_[0][2]) + p_[1][0] * sin(p_[1][1] * x + p_[1][2])
@@ -259,7 +277,7 @@ double MyRobot::GeneralModelSin8(const double **p_, double x)
     return result;
 }
 
-double MyRobot::LinearModelPoly9(const double *p_, const double x)
+double MyRobot::linearModelPoly9(const double *p_, const double x)
 {
     double result;
     result = p_[0] * pow(x,9) + p_[1] * pow(x,8) + p_[2] * pow(x,7)
@@ -268,10 +286,21 @@ double MyRobot::LinearModelPoly9(const double *p_, const double x)
     return result;
 }
 
+double MyRobot::linearModelPoly4(const double *p_,  double x) {
+    double result;
+    x = x / 4;
+    result = p_[0] * pow(x, 4) + p_[1] * pow(x, 3) + p_[2] * pow(x, 2)
+             + p_[3] * pow(x, 1) + p_[4];
+//             + p_[3] * pow(x,6) + p_[4] * pow(x,5) + p_[5] * pow(x,4)
+//             + p_[6] * pow(x,3) + p_[7] * pow(x,2) + p_[8] * x + p_[9];
+    return result;
+}
+
 //计算拟合与插值后的数据
 void MyRobot::calculate()
 {
-    double x_poly9_p[10] = {0.448, -0.02, -2.973, 0.3236, 7.289, -2.869, 12.68, 13.13, -69.59, -46.1};
+//    double x_poly9_p[10] = {1.611e-18, -2.188e-15, 1.241e-12, -3.799e-10, 6.792e-8, -7.219e-6, 0.0004906, -0.03177, 1.502, -8.661};
+    double x_poly4_p[5] = { -8.249e-6, 0.003244, -0.2702, 4.982, -7.106};
     double y_sin8_p[8][3] = {
                             {4.103, 0.01957, -0.7143}, {4.271, 0.1045, 4.75}, {3, 0.03997, -0.2004},
                             {2.26, 0.0601, 0.7872}, {6.961, 0.09453, 2.871}, {3.335, 0.07773, 1.978},
@@ -281,8 +310,27 @@ void MyRobot::calculate()
     double z_sin8_p[8][3] = {
                             {239, 0.5935, 0.632}, {231.7, 0.6488, -2.602}, {0.2925, 5.336, -1.145},
                             {0.8814, 6.169, -2.172}, {0.8623, 8.27, 2.18}, {0.7668, 23.29, 0.675},
-                            {0.6744, 9.041, -2.026}, {0.546, 19.68, -2.821} };
-
-
-
+                            {0.6744, 9.041, -2.026}, {0.546, 19.68, -2.821}
+                            };
+    std::vector<float> temp;
+    temp.reserve(6);
+    for (int i = 0; i < 2 * cam_pose.size() - 1; ++i) //因为方便插值而排除了最后一个数据
+    {
+//        temp.push_back(linearModelPoly9(x_poly9_p, i/2.0));
+        temp.push_back(linearModelPoly4(x_poly4_p, i/2.0));
+        temp.push_back(generalModelSin8(y_sin8_p, i/2.0));
+        temp.push_back(generalModelSin8(z_sin8_p, i/2.0));
+        temp.push_back((cam_pose[i/2][3] + cam_pose[(i+1)/2][3])/2.0);//线性插值
+        temp.push_back((cam_pose[i/2][4] + cam_pose[(i+1)/2][4])/2.0);
+        temp.push_back((cam_pose[i/2][5] + cam_pose[(i+1)/2][5])/2.0);
+        rob_pose.push_back(temp);
+        temp.clear();
+    }
+//    double x_smooth[600], y_smooth[600], z_smooth[600];
+//    for (int i = 0; i < 600; ++i)
+//    {
+//        x_smooth[i] = linearModelPoly9(x_poly9_p, i/2.0);
+//        y_smooth[i] = generalModelSin8(y_sin8_p, i/2.0);
+//        z_smooth[i] = generalModelSin8(z_sin8_p, i/2.0);
+//    }
 }
